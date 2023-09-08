@@ -2,40 +2,19 @@
 
 /**
  * main- Entry point
- * @void: Null value
- *
- * Description: Print numbers from 00 to 99
+ * Description: Print alphabet lowercase
  * Return: Zero value
  */
 
 int main(void)
 {
-	int i = 0;
-	int j, k;
-	int count = 0;
+	char c;
 
-	while (i <= 7)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		j = i + 1;
-		while (j <= 8)
-		{
-			k = j + 1;
-			while (k <= 9)
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (count != 119)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				k++;
-				count++;
-			}
-			j++;
-		}
-		i++;
+		if (c == 'q' || c == 'e')
+			continue;
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
