@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 
 /**
  * main- Entry point
@@ -10,27 +13,16 @@
 
 int main(void)
 {
-	int i = 0;
-	int j;
-	int count = 0;
+	
+	char low;
+	
 
-	while (i <= 8)
-	{
-		j = i + 1;
-		while (j <= 9)
-		{
-			putchar(i + '0');
-			putchar(j + '0');
-			if (count != 44)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
-			count++;
-		}
-		i++;
-	}
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
+	
+	for (low = 'A'; low <= 'Z'; low++)
+        putchar(low);
 	putchar('\n');
+ 
 	return (0);
 }
