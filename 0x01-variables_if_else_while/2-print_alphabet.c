@@ -2,26 +2,16 @@
 
 /**
  * main- Entry point
- * @void: Null value
- *
- * Description: Print numbers from 00 to 99
+ * Description: Print alphabet lowercase
  * Return: Zero value
  */
 
 int main(void)
 {
-	int n;
+	char c;
 
-	for (n = 0; n <= 99; n++)
-	{
-		putchar((n / 10) + '0');
-		putchar((n % 10) + '0');
-		if (n != 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
 	putchar('\n');
 	return (0);
 }
