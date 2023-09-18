@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * 0-reset_to_98 -Takes a pointer to an int and updates
+ * 0-reset_to_98 - Takes a pointer to an int and updates
  * the value it points to 98
  *
- * @n: An integer input pointer
+ * @n: the value of a deferencing pointer
  *
  * Return : nothing
  */
