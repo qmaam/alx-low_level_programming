@@ -1,12 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * 0-reset_to_98 - Takes a pointer to an int and updates
- * the value it points to 98
- *
- * @n: the value of a deferencing pointer
- *
- * Return : nothing
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
+ * @n: pointer to the variable to update
  */
 void reset_to_98(int *n)
 {
