@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * The _memse() -used to set a range of memory to a specific value
- * @s: paremeter
- * @b: paremeter
- * @n: paremeter
- * Return value of _memse:set
+ * *_memset - used to fill a block of memory with a specified value
+ * @s: distination
+ * @b: constant
+ * @n: byte
+ * Return: nothing
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	for (int i = 0; i < n; i++)
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 	{
-		*(s + i) = b;
-		return (s);
+		s[i] = b;
 	}
+	return (s);
 }
